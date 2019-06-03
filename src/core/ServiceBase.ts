@@ -11,9 +11,9 @@ export default class ServiceBase {
     } = {};
 
     constructor() {
-        if (ServiceBase.instance[this.constructor.name]) {
-            return ServiceBase.instance[this.constructor.name];
+        if (ServiceBase.instance[this.constructor.toString()]) {
+            return ServiceBase.instance[this.constructor.toString()];
         }
-        ServiceBase.instance[this.constructor.name] = this;
+        ServiceBase.instance[this.constructor.toString()] = this;
     }
 }

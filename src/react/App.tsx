@@ -1,5 +1,4 @@
-import { Transition } from '@uirouter/core';
-import { UIRouter, UIView } from '@uirouter/react';
+import { Transition, UIRouter, UIView } from '@uirouter/react';
 import * as React from 'react';
 import { Provider } from 'react-redux';
 import { compose, createStore } from 'redux';

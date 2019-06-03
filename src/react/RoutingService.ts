@@ -1,14 +1,11 @@
 import {
     pushStateLocationPlugin,
     servicesPlugin,
-    Transition,
     TransitionHookFn,
     UIRouterReact,
 } from '@uirouter/react';
 import ServiceBase from '../core/ServiceBase';
 import { IRouteState } from '../core/types';
-
-export { Transition as ITransition };
 
 /**
  * Routing Service.
