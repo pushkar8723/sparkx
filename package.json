@@ -1,6 +1,6 @@
 {
   "name": "sparkx",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "Another MVC framework",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -11,7 +11,8 @@
     "clean": "shx rm -rf _bundles lib lib-esm",
     "compile": "npm run clean && tsc && tsc -m es6 --outDir lib-esm",
     "bundle": "NODE_ENV=production webpack",
-    "build": "npx run-s compile bundle"
+    "build": "npx run-s compile bundle",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,9 +29,16 @@
   },
   "homepage": "https://github.com/pushkar8723/sparkx#readme",
   "peerDependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
   },
+  "files": [
+    "lib/**/*",
+    "lib-esm/**/*",
+    "core/**/*",
+    "react/**/*",
+    "services/**/*"
+  ],
   "dependencies": {
     "@uirouter/react": "^0.8.9",
     "axios": "^0.18.0",

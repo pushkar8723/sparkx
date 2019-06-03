@@ -1,0 +1,7 @@
+{
+    "internal": true,
+    "main": "../lib/services/index.js",
+    "jsnext:main": "../lib-esm/services/index.js",
+    "module": "../lib-esm/services/index.js",
+    "types": "../lib/services/index.d.ts"
+}
