@@ -1,8 +1,9 @@
 import { fromJS } from 'immutable';
 
-const defaultState = fromJS({});
+export const defaultState = fromJS({});
 export enum GlobalActions {
     UPDATE_GLOBAL = 'UPDATE_GLOBAL',
+    INIT = '@@INIT',
 }
 
 interface IAction {
@@ -11,9 +12,13 @@ interface IAction {
      */
     type: GlobalActions;
     /**
+     * Name of the scope from where the action was called.
+     */
+    scopeName?: string;
+    /**
      * Payload for global state.
      */
-    payload: any;
+    payload?: any;
 }
 
 /**

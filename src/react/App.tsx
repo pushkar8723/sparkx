@@ -31,6 +31,7 @@ export function initApp<G>(
      * Callback function to update global scope.
      * @param payload
      */
+    // tslint:disable-next-line: completed-docs
     function configFn<K extends keyof G>(payload: Pick<G, K>) {
         store.dispatch({
             payload,
@@ -50,7 +51,7 @@ export function initApp<G>(
         while (stateName.length && !toState.name.startsWith(stateName)) {
             store.dispatch({
                 scopeName: stateName,
-                type: ScopeActions.CLEAR_SOCPE,
+                type: ScopeActions.CLEAR_SCOPE,
             });
             stateName = stateName.split('.').slice(0, -1).join('.');
         }

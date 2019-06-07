@@ -36,7 +36,7 @@ export default {
     },
     plugins: [
         new webpack.DefinePlugin(config),
-        // new BundleAnalyzerPlugin()
+        new BundleAnalyzerPlugin()
     ],
     externals: {
         react: { root: 'React', amd: 'react', commonjs2: 'react', commonjs: 'react' },

@@ -4,3 +4,4 @@ dist
 lib
 lib-esm
 _bundles
+coverage

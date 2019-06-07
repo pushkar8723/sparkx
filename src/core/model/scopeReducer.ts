@@ -1,9 +1,10 @@
 import { fromJS } from 'immutable';
 
-const defaultState = fromJS({});
+export const defaultState = fromJS({});
 export enum ScopeActions {
     UPDATE_SCOPE = 'UPDATE_SCOPE',
-    CLEAR_SOCPE = 'CLEAR_SCOPE',
+    CLEAR_SCOPE = 'CLEAR_SCOPE',
+    INIT = '@@INIT',
 }
 
 interface IAction {
@@ -14,11 +15,11 @@ interface IAction {
     /**
      * Name of the scope to be updated.
      */
-    scopeName: string;
+    scopeName?: string;
     /**
      * Payload for global state.
      */
-    payload: any;
+    payload?: any;
 }
 
 /**
@@ -39,7 +40,7 @@ export default function scopeReducer(state: any = defaultState, action: IAction)
                 ...action.payload,
             },
         });
-    case ScopeActions.CLEAR_SOCPE:
+    case ScopeActions.CLEAR_SCOPE:
         return fromJS({
             ...pojoState,
             [action.scopeName]: undefined,

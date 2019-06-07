@@ -16,6 +16,7 @@
         "object-shorthand-properties-first": false,
         "jsx-no-multiline-js": false,
         "space-in-parens": false,
-        "import-name": false
+        "import-name": false,
+        "array-type": false
     }
 }

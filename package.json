@@ -8,11 +8,14 @@
   "module": "lib-esm/index.js",
   "prepublishOnly": "npm run build",
   "scripts": {
+    "check-all": "npx run-s lint test",
     "clean": "shx rm -rf _bundles lib lib-esm",
     "compile": "npm run clean && tsc && tsc -m es6 --outDir lib-esm",
     "bundle": "NODE_ENV=production webpack",
     "build": "npx run-s compile bundle",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -52,16 +55,20 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-typescript": "^7.3.3",
     "@babel/register": "^7.4.4",
+    "@types/jest": "^24.0.13",
     "@types/prop-types": "^15.7.1",
     "@types/react": "^16.8.18",
     "@types/react-dom": "^16.8.4",
     "@types/react-redux": "^7.0.9",
     "awesome-typescript-loader": "^5.2.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "jest": "^24.8.0",
     "npm-run-all": "^4.1.5",
+    "pre-commit": "^1.2.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "shx": "^0.3.2",
+    "ts-jest": "^24.0.2",
     "ts-loader": "^6.0.1",
     "tslint": "^5.16.0",
     "tslint-config-airbnb": "^5.11.1",
@@ -70,5 +77,20 @@
     "webpack": "^4.32.0",
     "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.2"
+  },
+  "pre-commit": "check-all",
+  "jest": {
+    "collectCoverageFrom": ["src/**/*"],
+    "moduleNameMapper": {
+      "^src(.*)$": "<rootDir>/src$1"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx",
+      "ts",
+      "tsx",
+      "node"
+    ]
   }
 }
