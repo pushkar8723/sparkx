@@ -6,14 +6,12 @@ export default class ServiceBase {
     /**
      * Maintains the map of instance of the services.
      */
-    private static instance: {
-        [serviceName: string]: ServiceBase,
-    } = {};
+    private static instance: WeakMap<any, ServiceBase> = new WeakMap();
 
     constructor() {
-        if (ServiceBase.instance[this.constructor.toString()]) {
-            return ServiceBase.instance[this.constructor.toString()];
+        if (ServiceBase.instance.has(this.constructor)) {
+            return ServiceBase.instance.get(this.constructor);
         }
-        ServiceBase.instance[this.constructor.toString()] = this;
+        ServiceBase.instance.set(this.constructor, this);
     }
 }
