@@ -1,6 +1,5 @@
 import webpack from 'webpack';
 import path from 'path';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
 const mode = process.env.NODE_ENV;
 const isProduction = mode === 'production';
@@ -35,8 +34,7 @@ export default {
         ],
     },
     plugins: [
-        new webpack.DefinePlugin(config),
-        new BundleAnalyzerPlugin()
+        new webpack.DefinePlugin(config)
     ],
     externals: {
         react: { root: 'React', amd: 'react', commonjs2: 'react', commonjs: 'react' },

@@ -1,5 +1,5 @@
 {
-    "presets": ["@babel/env", "@babel/preset-typescript"],
+    "presets": ["@babel/env", "@babel/preset-typescript", "@babel/react"],
     "plugins": [
         "@babel/plugin-syntax-dynamic-import",
         "transform-class-properties"

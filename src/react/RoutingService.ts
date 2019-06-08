@@ -1,7 +1,8 @@
 import {
-    pushStateLocationPlugin,
+    PluginFactory,
     servicesPlugin,
     TransitionHookFn,
+    UIRouterPlugin,
     UIRouterReact,
 } from '@uirouter/react';
 import ServiceBase from '../core/ServiceBase';
@@ -22,7 +23,6 @@ export default class RoutingService extends ServiceBase {
         if (!this.router) {
             this.router = new UIRouterReact();
             this.router.plugin(servicesPlugin);
-            this.router.plugin(pushStateLocationPlugin);
 
             // Lazy load visualizer. Helps in debugging
             // import('@uirouter/visualizer').then(module => this.router.plugin(module.Visualizer));
@@ -41,6 +41,13 @@ export default class RoutingService extends ServiceBase {
      */
     public setInitialState(state: string) {
         this.router.urlService.rules.initial({ state });
+    }
+
+    /**
+     * Registers a plugin
+     */
+    public registerPlugin(plugin: PluginFactory<UIRouterPlugin>) {
+        this.router.plugin(plugin);
     }
 
     /**

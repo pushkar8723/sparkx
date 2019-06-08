@@ -35,6 +35,13 @@ describe('Test Routing Service', () => {
         });
     });
 
+    it('Test Register plugin', () => {
+        const routerInstance = UIRouterReact.mock.instances[0];
+        routerInstance.plugin = jest.fn();
+        service.registerPlugin('plugin');
+        expect(routerInstance.plugin).toHaveBeenCalledWith('plugin');
+    });
+
     it('Test Set 404 state', () => {
         const routerInstance = UIRouterReact.mock.instances[0];
         routerInstance.urlService = {

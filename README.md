@@ -1,4 +1,4 @@
-Sparkx
-======
+Sparkx :sparkles:
+=================
 
-Another MVC framework.
+MVC framework with flux implementation for state management.

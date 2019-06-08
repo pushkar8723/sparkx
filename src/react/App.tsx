@@ -17,7 +17,8 @@ export function initApp<G>(
     const middlewares: any = [];
 
     // Adding devtool extension midleware if its a non production build.
-    if (__MODE__  !== 'production' && (window as any).__REDUX_DEVTOOLS_EXTENSION__) {
+    if (typeof __MODE__ === 'string' && __MODE__  !== 'production' &&
+        (window as any).__REDUX_DEVTOOLS_EXTENSION__) {
         middlewares.push((window as any).__REDUX_DEVTOOLS_EXTENSION__());
     }
 
