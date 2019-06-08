@@ -5,3 +5,4 @@ lib
 lib-esm
 _bundles
 coverage
+.vscode
