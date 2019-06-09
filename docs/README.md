@@ -1,11 +1,8 @@
+
 Sparkx :sparkles:
 =================
-[![npm version](https://badge.fury.io/js/sparkx.svg)](https://badge.fury.io/js/sparkx)
-[![Build Status](https://travis-ci.org/pushkar8723/sparkx.svg?branch=master)](https://travis-ci.org/pushkar8723/sparkx)
-[![Coverage Status](https://coveralls.io/repos/github/pushkar8723/sparkx/badge.svg?branch=master)](https://coveralls.io/github/pushkar8723/sparkx?branch=master)
-![Minifized Size](https://badgen.net/bundlephobia/min/sparkx)
-![Gzipped Size](https://badgen.net/bundlephobia/minzip/sparkx)
-[![license](https://badgen.now.sh/badge/license/MIT)](./LICENSE)
+
+[![npm version](https://badge.fury.io/js/sparkx.svg)](https://badge.fury.io/js/sparkx) [![Build Status](https://travis-ci.org/pushkar8723/sparkx.svg?branch=master)](https://travis-ci.org/pushkar8723/sparkx) [![Coverage Status](https://coveralls.io/repos/github/pushkar8723/sparkx/badge.svg?branch=master)](https://coveralls.io/github/pushkar8723/sparkx?branch=master) ![Minifized Size](https://badgen.net/bundlephobia/min/sparkx) ![Gzipped Size](https://badgen.net/bundlephobia/minzip/sparkx) [![license](https://badgen.now.sh/badge/license/MIT)](./LICENSE)
 
 MVC framework with flux implementation for state management.
 
@@ -14,22 +11,24 @@ Today a frontend developer has to make a very difficult choice before starting a
 This tradeoff between predictability and time for development is what sparkx tries to solve. By combining flux design pattern for state management with MVC structure, we get a framework with well-defined separation of concerns with all the features of flux like traceability and time travel for easy debug.
 
 ### Features
-- [x] Application State management
-- [x] Immutable state
-- [x] Hierarchical state
-- [x] Routing with nested routes, transition hooks and lazy load
-- [x] Support for hash and browser history api routing
-- [x] Typed
-- [x] Sigleton services
-- [x] Support for React
-- [ ] Support for Vue
-- [ ] Support for Polymer
+
+*    Application State management
+*    Immutable state
+*    Hierarchical state
+*    Routing with nested routes, transition hooks and lazy load
+*    Support for hash and browser history api routing
+*    Typed
+*    Sigleton services
+*    Support for React
+*    Support for Vue
+*    Support for Polymer
 
 ### Gettting Started
 
 All you need to keep in mind while writing an application using sparkx is that there are two scopes.
-- Global: This state is available to every view and controller and can be used to save information required throughout the application like user context and metadata.
-- Scope: This part of the state is specific to the view and controller. It is automatically cleared when the user moves to another state.
+
+*   Global: This state is available to every view and controller and can be used to save information required throughout the application like user context and metadata.
+*   Scope: This part of the state is specific to the view and controller. It is automatically cleared when the user moves to another state.
 
 ##### Initializing App
 
@@ -105,11 +104,11 @@ export default [welcomeState, booksFutureState, errorState];
 ##### Creating a Controller
 
 Creating a controller for a view is optional. To create a controller, the class must extend `ControllerBase` class (Detailed docs available [here](./docs/classes/_core_controllerbase_.controllerbase.md)). Each controller will be injected with 4 private members as described below:
-- `this._scope`: Local scope of the view and controller.
-- `this._setScope`: Method to update the local scope. This works similar to `setState` function in react. The object provided as an argument to this method will be spread over the previous state. The initial state is an empty object `{}`.
-- `this._global`: The global scope of the application.
-- `this._setGlobal`: Method to update the global scope.
-All public methods in controllers are exposed as props in react component (view of the application). Like in example below, `login` method is exposed in react component as prop.
+
+*   `this._scope`: Local scope of the view and controller.
+*   `this._setScope`: Method to update the local scope. This works similar to `setState` function in react. The object provided as an argument to this method will be spread over the previous state. The initial state is an empty object `{}`.
+*   `this._global`: The global scope of the application.
+*   `this._setGlobal`: Method to update the global scope. All public methods in controllers are exposed as props in react component (view of the application). Like in example below, `login` method is exposed in react component as prop.
 
 ```TypeScript
 import { ControllerBase } from 'sparkx/core';
@@ -185,6 +184,30 @@ export default GoogleBooksService;
 ```
 
 ### Demo Application
+
 React: [https://github.com/pushkar8723/react-boilerplate](https://github.com/pushkar8723/react-boilerplate)
 
 ##### [MIT License](./LICENSE)
+
+## Index
+
+### External modules
+
+* ["core/ControllerBase"](modules/_core_controllerbase_.md)
+* ["core/ServiceBase"](modules/_core_servicebase_.md)
+* ["core/index"](modules/_core_index_.md)
+* ["core/model/globalReducer"](modules/_core_model_globalreducer_.md)
+* ["core/model/index"](modules/_core_model_index_.md)
+* ["core/model/scopeReducer"](modules/_core_model_scopereducer_.md)
+* ["core/stateManagement"](modules/_core_statemanagement_.md)
+* ["core/types"](modules/_core_types_.md)
+* ["index"](modules/_index_.md)
+* ["react/App"](modules/_react_app_.md)
+* ["react/RoutingService"](modules/_react_routingservice_.md)
+* ["react/index"](modules/_react_index_.md)
+* ["react/route"](modules/_react_route_.md)
+* ["services/HTTPService"](modules/_services_httpservice_.md)
+* ["services/index"](modules/_services_index_.md)
+
+---
+
