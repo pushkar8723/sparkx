@@ -87,8 +87,11 @@
   "pre-commit": "check-all",
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*"
+      "packages/**/*"
     ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
     "moduleNameMapper": {
       "^src(.*)$": "<rootDir>/src$1"
     },

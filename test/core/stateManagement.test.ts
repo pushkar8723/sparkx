@@ -1,5 +1,5 @@
 import { fromJS } from 'immutable';
-import * as stateManagement from 'src/core/stateManagement';
+import * as stateManagement from '../../packages/core/src/stateManagement';
 
 const payload = {
     key: 'value',

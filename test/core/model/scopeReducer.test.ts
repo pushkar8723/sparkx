@@ -1,5 +1,8 @@
 import { fromJS } from 'immutable';
-import scopeReducer, { defaultState, ScopeActions } from 'src/core/model/scopeReducer';
+import scopeReducer, {
+    defaultState,
+    ScopeActions,
+} from '../../../packages/core/src/model/scopeReducer';
 
 describe('Scope Reducer Test', () => {
 
