@@ -1,14 +1,14 @@
-import { ComponentType } from 'react';
-import { connect } from 'react-redux';
-import ControllerBase from '../core/ControllerBase';
+import { ControllerBase } from '@sparkx/core';
 import {
     getScope,
     mapCtrl,
     mapPayloadToAction,
     setGlobal,
     setScope,
-} from '../core/stateManagement';
-import { IRouteState } from '../core/types';
+} from '@sparkx/core/lib/stateManagement';
+import { IRouteState } from '@sparkx/core/lib/types';
+import { ComponentType } from 'react';
+import { connect } from 'react-redux';
 
 /**
  * Binds Model in Redux to component and controller.

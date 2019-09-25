@@ -1,5 +1,5 @@
+import { ServiceBase } from '@sparkx/core';
 import axios, { AxiosRequestConfig } from 'axios';
-import ServiceBase from '../core/ServiceBase';
 
 interface IHTTPHeaders {
     [headerKey: string]: string;

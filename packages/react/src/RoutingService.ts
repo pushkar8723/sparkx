@@ -1,3 +1,5 @@
+import { ServiceBase } from '@sparkx/core';
+import { IRouteState } from '@sparkx/core/lib/types';
 import {
     PluginFactory,
     servicesPlugin,
@@ -5,8 +7,6 @@ import {
     UIRouterPlugin,
     UIRouterReact,
 } from '@uirouter/react';
-import ServiceBase from '../core/ServiceBase';
-import { IRouteState } from '../core/types';
 
 /**
  * Routing Service.

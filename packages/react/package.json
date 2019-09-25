@@ -1,0 +1,34 @@
+{
+  "name": "@sparkx/react",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Pushkar Anand <pushkar8723@gmail.com>",
+  "homepage": "https://github.com/pushkar8723/sparkx/tree/master/packages/react#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pushkar8723/sparkx.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/pushkar8723/sparkx/issues"
+  },
+  "dependencies": {
+    "@sparkx/core": "^0.0.0",
+    "@uirouter/react": "^0.8.9",
+    "react-redux": "^7.0.3"
+  }
+}

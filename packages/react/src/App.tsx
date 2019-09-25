@@ -1,10 +1,10 @@
+import { compose, createStore } from '@sparkx/core';
+import model from '@sparkx/core/lib/model';
+import { GlobalActions } from '@sparkx/core/lib/model/globalReducer';
+import { ScopeActions } from '@sparkx/core/lib/model/scopeReducer';
 import { Transition, UIRouter, UIView } from '@uirouter/react';
 import * as React from 'react';
 import { Provider } from 'react-redux';
-import { compose, createStore } from 'redux';
-import model from '../core/model';
-import { GlobalActions } from '../core/model/globalReducer';
-import { ScopeActions } from '../core/model/scopeReducer';
 import RoutingService from './RoutingService';
 
 /**
@@ -12,12 +12,13 @@ import RoutingService from './RoutingService';
  */
 export function initApp<G>(
     config?: (setGlobal: <K extends keyof G>(payload: Pick<G, K>) => void) => void,
+    mode: string = 'production',
 ): JSX.Element {
     const routingService = new RoutingService();
     const middlewares: any = [];
 
     // Adding devtool extension midleware if its a non production build.
-    if (typeof __MODE__ === 'string' && __MODE__  !== 'production' &&
+    if (mode !== 'production' &&
         (window as any).__REDUX_DEVTOOLS_EXTENSION__) {
         middlewares.push((window as any).__REDUX_DEVTOOLS_EXTENSION__());
     }

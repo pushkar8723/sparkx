@@ -1,4 +1,4 @@
-import { fromJS } from 'immutable';
+import { fromJS } from '../../../packages/core/node_modules/immutable';
 import globalReducer, {
     defaultState,
     GlobalActions,

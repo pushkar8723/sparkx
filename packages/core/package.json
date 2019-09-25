@@ -1,26 +1,42 @@
 {
-  "name": "core",
+  "name": "@sparkx/core",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Pushkar Anand <pushkar8723@gmail.com>",
   "homepage": "https://github.com/pushkar8723/sparkx/tree/master/packages/core#readme",
   "license": "MIT",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "jsnext:main": "lib-esm/index.js",
+  "module": "lib-esm/index.js",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
-    "lib"
+    "lib/**/*",
+    "lib-esm/**/*"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pushkar8723/sparkx.git"
   },
   "scripts": {
+    "clean": "shx rm -rf _bundles lib lib-esm",
+    "compile": "npm run clean && tsc && tsc -m es6 --outDir lib-esm",
+    "build": "npx run-s compile",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/pushkar8723/sparkx/issues"
+  },
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "redux": "^4.0.4"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "npx": "^10.2.0",
+    "shx": "^0.3.2",
+    "typescript": "^3.6.3"
   }
 }

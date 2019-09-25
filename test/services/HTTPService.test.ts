@@ -1,5 +1,5 @@
-import axios from 'axios';
-import HTTPService from 'src/services/HTTPService';
+import axios from '../../packages/services/node_modules/axios';
+import { HTTPService } from '../../packages/services/src';
 
 let service: HTTPService;
 const mockParam = { q: 'value' };
@@ -9,7 +9,7 @@ const expectedHeader = {
     'content-type': 'application/json',
     'test-key': 'value',
 };
-jest.mock('axios');
+jest.mock('../../packages/services/node_modules/axios');
 
 describe('Test HTTP Service', () => {
     beforeEach(() => {

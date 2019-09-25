@@ -1,12 +1,12 @@
-import { connect } from 'react-redux';
-import * as route from 'src/react/route';
+import { connect } from '../../packages/react/node_modules/react-redux';
+import * as route from '../../packages/react/src/route';
 
 const mockDispatch = jest.fn();
 
-jest.mock('react-redux', () => ({
+jest.mock('../../packages/react/node_modules/react-redux', () => ({
     connect: jest.fn().mockImplementation(
         (mapStateToProps, mapDispatchToProps, mergeProps) => {
-            const { fromJS } = require('immutable');
+            const { fromJS } = require('../../packages/core/node_modules/immutable');
             const stateProps = mapStateToProps({
                 global: fromJS({
                     key: 'global value',

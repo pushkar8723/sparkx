@@ -1,10 +1,10 @@
-import { fromJS } from 'immutable';
-import { createStore } from 'redux';
-import { initApp } from 'src/react/App';
+import { fromJS } from '../../packages/core/node_modules/immutable';
+import { createStore } from '../../packages/react/node_modules/@sparkx/core';
+import { initApp } from '../../packages/react/src';
 
 const mockDispatch = jest.fn();
 let clearFn: (transition: any) => void;
-jest.mock('@uirouter/react', () => ({
+jest.mock('../../packages/react/node_modules/@uirouter/react', () => ({
     UIRouterReact: jest.fn().mockImplementation(() => (
         {
             plugin: jest.fn(),
@@ -18,7 +18,7 @@ jest.mock('@uirouter/react', () => ({
         }
     )),
 }));
-jest.mock('redux', () => {
+jest.mock('../../packages/core/node_modules/redux', () => {
     return {
         combineReducers: jest.fn().mockImplementation((store) => {
             const finalStore = {};
@@ -56,17 +56,15 @@ describe('Test App', () => {
 
     it('Test init app __MODE__ production', () => {
         const mockFn = jest.fn();
-        window.__MODE__ = 'production';
         window.__REDUX_DEVTOOLS_EXTENSION__ = mockFn;
-        initApp();
+        initApp(null, 'production');
         expect(mockFn).toBeCalledTimes(0);
     });
 
     it('Test init app __MODE__ development and redux extension', () => {
         const mockFn = jest.fn();
-        window.__MODE__ = 'development';
         window.__REDUX_DEVTOOLS_EXTENSION__ = mockFn;
-        initApp();
+        initApp(null, 'development');
         expect(mockFn).toBeCalled();
     });
 

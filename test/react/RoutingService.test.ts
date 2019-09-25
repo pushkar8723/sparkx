@@ -1,8 +1,8 @@
-import { UIRouterReact } from '@uirouter/react';
-import RoutingService from 'src/react/RoutingService';
+import { UIRouterReact } from '../../packages/react/node_modules/@uirouter/react';
+import RoutingService from '../../packages/react/src/RoutingService';
 
 let service: RoutingService;
-jest.mock('@uirouter/react');
+jest.mock('../../packages/react/node_modules/@uirouter/react');
 
 describe('Test Routing Service', () => {
     beforeEach(() => {
