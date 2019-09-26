@@ -9,15 +9,14 @@
   "prepublishOnly": "npm run build",
   "scripts": {
     "check-all": "npx run-s lint test",
-    "clean": "shx rm -rf _bundles lib lib-esm",
-    "compile": "npm run clean && tsc && tsc -m es6 --outDir lib-esm",
+    "clean": "lerna run clean && lerna clean -y",
     "clear-docs": "shx rm -rf docs",
-    "docs": "npm run clear-docs && npx typedoc --out docs/ --theme markdown src/",
-    "bundle": "NODE_ENV=production webpack",
-    "build": "npx run-s compile bundle",
-    "prepare": "npx run-s check-all build",
+    "docs": "npm run clear-docs && npx typedoc --out docs/ --theme markdown packages/**/src/",
+    "build": "lerna run build",
+    "prepare": "npx run-s bootstrap build check-all",
     "lint": "tslint -p tsconfig.json",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "bootstrap": "lerna bootstrap"
   },
   "repository": {
     "type": "git",
@@ -40,17 +39,8 @@
   "files": [
     "lib/**/*",
     "lib-esm/**/*",
-    "core/**/*",
-    "react/**/*",
-    "services/**/*"
+    "_bundles/**/*"
   ],
-  "dependencies": {
-    "@uirouter/react": "^0.8.9",
-    "axios": "^0.18.0",
-    "immutable": "^4.0.0-rc.12",
-    "react-redux": "^7.0.3",
-    "redux": "^4.0.1"
-  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",

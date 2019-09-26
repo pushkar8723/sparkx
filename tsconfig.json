@@ -18,10 +18,7 @@
             "react": ["./node_modules/@types/react"]
         }
     },
-    "include": [
-        "./src/**/*", "./packages/**/src/**/*"
-    ],
     "exclude": [
         "node_modules"
-    ],
+    ]
 }

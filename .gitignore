@@ -6,3 +6,4 @@ lib-esm
 _bundles
 coverage
 .vscode
+lerna-debug.log
