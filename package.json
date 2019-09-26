@@ -9,14 +9,14 @@
   "prepublishOnly": "npm run build",
   "scripts": {
     "check-all": "npx run-s lint test",
-    "clean": "lerna run clean && lerna clean -y",
+    "clean": "npx lerna run clean && npx lerna clean -y",
     "clear-docs": "shx rm -rf docs",
     "docs": "npm run clear-docs && npx typedoc --out docs/ --theme markdown packages/**/src/",
-    "build": "lerna run build",
+    "build": "npx lerna run build",
     "prepare": "npx run-s bootstrap build check-all",
     "lint": "tslint -p tsconfig.json",
     "test": "jest --coverage",
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "npx lerna bootstrap"
   },
   "repository": {
     "type": "git",
@@ -57,6 +57,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "coveralls": "^3.0.4",
     "jest": "^24.8.0",
+    "lerna": "^3.16.4",
     "npm-run-all": "^4.1.5",
     "pre-commit": "^1.2.2",
     "react": "^16.8.6",
