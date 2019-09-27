@@ -1,0 +1,38 @@
+{
+  "name": "@sparkx/services",
+  "version": "0.0.3",
+  "description": "Sparkx services",
+  "author": "Pushkar Anand <pushkar8723@gmail.com>",
+  "homepage": "https://github.com/pushkar8723/sparkx/tree/master/packages/services#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "jsnext:main": "lib-esm/index.js",
+  "module": "lib-esm/index.js",
+  "files": [
+    "lib/**/*",
+    "lib-esm/**/*",
+    "_bundles/**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pushkar8723/sparkx.git"
+  },
+  "scripts": {
+    "clean": "shx rm -rf _bundles lib lib-esm",
+    "bundle": "NODE_ENV=production webpack",
+    "compile": "npm run clean && tsc && tsc -m es6 --outDir lib-esm",
+    "build": "npx run-s compile bundle",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/pushkar8723/sparkx/issues"
+  },
+  "dependencies": {
+    "@sparkx/core": "^0.0.3",
+    "axios": "^0.19.0"
+  }
+}

@@ -1,5 +1,8 @@
-import { fromJS } from 'immutable';
-import scopeReducer, { defaultState, ScopeActions } from 'src/core/model/scopeReducer';
+import { fromJS } from '../../../packages/core/node_modules/immutable';
+import scopeReducer, {
+    defaultState,
+    ScopeActions,
+} from '../../../packages/core/src/model/scopeReducer';
 
 describe('Scope Reducer Test', () => {
 
@@ -17,7 +20,7 @@ describe('Scope Reducer Test', () => {
             payload,
             scopeName: 'nested.scope',
             type: ScopeActions.UPDATE_SCOPE,
-        })).toStrictEqual(fromJS({
+        })).toEqual(fromJS({
             'nested.scope': payload,
         }));
     });

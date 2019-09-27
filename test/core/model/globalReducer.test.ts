@@ -1,5 +1,8 @@
-import { fromJS } from 'immutable';
-import globalReducer, { defaultState, GlobalActions } from 'src/core/model/globalReducer';
+import { fromJS } from '../../../packages/core/node_modules/immutable';
+import globalReducer, {
+    defaultState,
+    GlobalActions,
+} from '../../../packages/core/src/model/globalReducer';
 
 describe('Global Reducer Test', () => {
 

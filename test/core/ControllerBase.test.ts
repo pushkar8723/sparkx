@@ -1,4 +1,4 @@
-import { ControllerBase } from 'src/core';
+import { ControllerBase } from '../../packages/core/src';
 
 describe('Test Controller Base', () => {
 
