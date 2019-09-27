@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["core/src/types"](../modules/_core_src_types_.md)
+[Sparkx](../README.md) > ["core/src/types"](../modules/_core_src_types_.md)
 
 # External module: "core/src/types"
 

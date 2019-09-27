@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["core/src/types"](../modules/_core_src_types_.md) > [IRouteState](../interfaces/_core_src_types_.iroutestate.md)
+[Sparkx](../README.md) > ["core/src/types"](../modules/_core_src_types_.md) > [IRouteState](../interfaces/_core_src_types_.iroutestate.md)
 
 # Interface: IRouteState
 
@@ -30,7 +30,7 @@
 
 **● component**: *`any`*
 
-*Defined in [core/src/types.ts:19](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/types.ts#L19)*
+*Defined in [core/src/types.ts:19](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/types.ts#L19)*
 
 Component to be rendered.
 
@@ -41,7 +41,7 @@ ___
 
 **● controller**: *[ControllerBase](../classes/_core_src_controllerbase_.controllerbase.md)<`any`, `any`>*
 
-*Defined in [core/src/types.ts:11](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/types.ts#L11)*
+*Defined in [core/src/types.ts:11](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/types.ts#L11)*
 
 Controller for the component
 
@@ -52,7 +52,7 @@ ___
 
 **● data**: *`D`*
 
-*Defined in [core/src/types.ts:15](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/types.ts#L15)*
+*Defined in [core/src/types.ts:15](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/types.ts#L15)*
 
 Route data object
 
@@ -63,7 +63,7 @@ ___
 
 **● lazyLoad**: *`function`*
 
-*Defined in [core/src/types.ts:31](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/types.ts#L31)*
+*Defined in [core/src/types.ts:31](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/types.ts#L31)*
 
 Lazy loaded function
 
@@ -79,7 +79,7 @@ ___
 
 **● name**: *`string`*
 
-*Defined in [core/src/types.ts:7](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/types.ts#L7)*
+*Defined in [core/src/types.ts:7](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/types.ts#L7)*
 
 Name of the route
 
@@ -90,7 +90,7 @@ ___
 
 **● redirectTo**: *`string`*
 
-*Defined in [core/src/types.ts:27](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/types.ts#L27)*
+*Defined in [core/src/types.ts:27](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/types.ts#L27)*
 
 Redirection State.
 
@@ -101,7 +101,7 @@ ___
 
 **● url**: *`string`*
 
-*Defined in [core/src/types.ts:23](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/types.ts#L23)*
+*Defined in [core/src/types.ts:23](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/types.ts#L23)*
 
 url for the route.
 

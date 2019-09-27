@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["services/src/HTTPService"](../modules/_services_src_httpservice_.md) > [HTTPService](../classes/_services_src_httpservice_.httpservice.md)
+[Sparkx](../README.md) > ["services/src/HTTPService"](../modules/_services_src_httpservice_.md) > [HTTPService](../classes/_services_src_httpservice_.httpservice.md)
 
 # Class: HTTPService
 
@@ -58,7 +58,7 @@ ___
 
 ▸ **appendHeader**(key: *`string`*, value: *`string`*): `void`
 
-*Defined in [services/src/HTTPService.ts:33](https://github.com/pushkar8723/sparkx/blob/980f391/packages/services/src/HTTPService.ts#L33)*
+*Defined in [services/src/HTTPService.ts:33](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/services/src/HTTPService.ts#L33)*
 
 Adds a header to list of headers.
 
@@ -78,7 +78,7 @@ ___
 
 ▸ **delete**(url: *`string`*, data: *`any`*, params?: *[IQueryPrams](../interfaces/_services_src_httpservice_.iqueryprams.md)*, headers?: *[IHTTPHeaders](../interfaces/_services_src_httpservice_.ihttpheaders.md)*, customConfig?: *`any`*): `AxiosPromise`<`any`>
 
-*Defined in [services/src/HTTPService.ts:117](https://github.com/pushkar8723/sparkx/blob/980f391/packages/services/src/HTTPService.ts#L117)*
+*Defined in [services/src/HTTPService.ts:117](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/services/src/HTTPService.ts#L117)*
 
 Delete request
 
@@ -101,7 +101,7 @@ ___
 
 ▸ **get**(url: *`string`*, params?: *[IQueryPrams](../interfaces/_services_src_httpservice_.iqueryprams.md)*, headers?: *[IHTTPHeaders](../interfaces/_services_src_httpservice_.ihttpheaders.md)*, customConfig?: *`any`*): `AxiosPromise`<`any`>
 
-*Defined in [services/src/HTTPService.ts:71](https://github.com/pushkar8723/sparkx/blob/980f391/packages/services/src/HTTPService.ts#L71)*
+*Defined in [services/src/HTTPService.ts:71](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/services/src/HTTPService.ts#L71)*
 
 Get request.
 
@@ -123,7 +123,7 @@ ___
 
 ▸ **getInterceptors**(): `object`
 
-*Defined in [services/src/HTTPService.ts:50](https://github.com/pushkar8723/sparkx/blob/980f391/packages/services/src/HTTPService.ts#L50)*
+*Defined in [services/src/HTTPService.ts:50](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/services/src/HTTPService.ts#L50)*
 
 Returns axios interceptors.
 
@@ -136,7 +136,7 @@ ___
 
 ▸ **post**(url: *`string`*, data?: *`any`*, params?: *[IQueryPrams](../interfaces/_services_src_httpservice_.iqueryprams.md)*, headers?: *[IHTTPHeaders](../interfaces/_services_src_httpservice_.ihttpheaders.md)*, customConfig?: *`any`*): `AxiosPromise`<`any`>
 
-*Defined in [services/src/HTTPService.ts:85](https://github.com/pushkar8723/sparkx/blob/980f391/packages/services/src/HTTPService.ts#L85)*
+*Defined in [services/src/HTTPService.ts:85](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/services/src/HTTPService.ts#L85)*
 
 Post request
 
@@ -159,7 +159,7 @@ ___
 
 ▸ **put**(url: *`string`*, data: *`any`*, params?: *[IQueryPrams](../interfaces/_services_src_httpservice_.iqueryprams.md)*, headers?: *[IHTTPHeaders](../interfaces/_services_src_httpservice_.ihttpheaders.md)*, customConfig?: *`any`*): `AxiosPromise`<`any`>
 
-*Defined in [services/src/HTTPService.ts:101](https://github.com/pushkar8723/sparkx/blob/980f391/packages/services/src/HTTPService.ts#L101)*
+*Defined in [services/src/HTTPService.ts:101](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/services/src/HTTPService.ts#L101)*
 
 Put request
 
@@ -182,7 +182,7 @@ ___
 
 ▸ **removeHeader**(key: *`string`*): `void`
 
-*Defined in [services/src/HTTPService.ts:43](https://github.com/pushkar8723/sparkx/blob/980f391/packages/services/src/HTTPService.ts#L43)*
+*Defined in [services/src/HTTPService.ts:43](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/services/src/HTTPService.ts#L43)*
 
 Removes the given header.
 
@@ -201,7 +201,7 @@ ___
 
 ▸ **request**(config: *`AxiosRequestConfig`*, customConfig?: *`any`*): `AxiosPromise`<`any`>
 
-*Defined in [services/src/HTTPService.ts:60](https://github.com/pushkar8723/sparkx/blob/980f391/packages/services/src/HTTPService.ts#L60)*
+*Defined in [services/src/HTTPService.ts:60](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/services/src/HTTPService.ts#L60)*
 
 Generic HTTP request. This is done so that developer can use any functionality provided by axios. Here, only the set heards are spread over what was sent in config.
 
@@ -221,7 +221,7 @@ ___
 
 ▸ **setHeaders**(headers: *[IHTTPHeaders](../interfaces/_services_src_httpservice_.ihttpheaders.md)*): `void`
 
-*Defined in [services/src/HTTPService.ts:26](https://github.com/pushkar8723/sparkx/blob/980f391/packages/services/src/HTTPService.ts#L26)*
+*Defined in [services/src/HTTPService.ts:26](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/services/src/HTTPService.ts#L26)*
 
 Sets the headers to the given object.
 
@@ -243,7 +243,7 @@ ___
 
 **headers**: *`object`*
 
-*Defined in [services/src/HTTPService.ts:19](https://github.com/pushkar8723/sparkx/blob/980f391/packages/services/src/HTTPService.ts#L19)*
+*Defined in [services/src/HTTPService.ts:19](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/services/src/HTTPService.ts#L19)*
 
 header object to be appened to all api calls.
 
@@ -253,7 +253,7 @@ header object to be appened to all api calls.
 
 **● content-type**: *`string`* = "application/json"
 
-*Defined in [services/src/HTTPService.ts:20](https://github.com/pushkar8723/sparkx/blob/980f391/packages/services/src/HTTPService.ts#L20)*
+*Defined in [services/src/HTTPService.ts:20](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/services/src/HTTPService.ts#L20)*
 
 ___
 

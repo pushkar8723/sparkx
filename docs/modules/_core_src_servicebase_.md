@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["core/src/ServiceBase"](../modules/_core_src_servicebase_.md)
+[Sparkx](../README.md) > ["core/src/ServiceBase"](../modules/_core_src_servicebase_.md)
 
 # External module: "core/src/ServiceBase"
 

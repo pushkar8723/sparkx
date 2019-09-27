@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["core/src/model/scopeReducer"](../modules/_core_src_model_scopereducer_.md)
+[Sparkx](../README.md) > ["core/src/model/scopeReducer"](../modules/_core_src_model_scopereducer_.md)
 
 # External module: "core/src/model/scopeReducer"
 
@@ -30,7 +30,7 @@
 
 **● defaultState**: *`any`* =  fromJS({})
 
-*Defined in [core/src/model/scopeReducer.ts:3](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/model/scopeReducer.ts#L3)*
+*Defined in [core/src/model/scopeReducer.ts:3](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/model/scopeReducer.ts#L3)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 ▸ **scopeReducer**(state?: *`any`*, action: *[IAction](../interfaces/_core_src_model_scopereducer_.iaction.md)*): `any`
 
-*Defined in [core/src/model/scopeReducer.ts:32](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/model/scopeReducer.ts#L32)*
+*Defined in [core/src/model/scopeReducer.ts:32](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/model/scopeReducer.ts#L32)*
 
 Reducer for global state. This state will be made available to all components.
 

@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["core/src/model/scopeReducer"](../modules/_core_src_model_scopereducer_.md) > [ScopeActions](../enums/_core_src_model_scopereducer_.scopeactions.md)
+[Sparkx](../README.md) > ["core/src/model/scopeReducer"](../modules/_core_src_model_scopereducer_.md) > [ScopeActions](../enums/_core_src_model_scopereducer_.scopeactions.md)
 
 # Enumeration: ScopeActions
 
@@ -20,7 +20,7 @@
 
 **CLEAR_SCOPE**:  = "CLEAR_SCOPE"
 
-*Defined in [core/src/model/scopeReducer.ts:6](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/model/scopeReducer.ts#L6)*
+*Defined in [core/src/model/scopeReducer.ts:6](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/model/scopeReducer.ts#L6)*
 
 ___
 <a id="init"></a>
@@ -29,7 +29,7 @@ ___
 
 **INIT**:  = "@@INIT"
 
-*Defined in [core/src/model/scopeReducer.ts:7](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/model/scopeReducer.ts#L7)*
+*Defined in [core/src/model/scopeReducer.ts:7](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/model/scopeReducer.ts#L7)*
 
 ___
 <a id="update_scope"></a>
@@ -38,7 +38,7 @@ ___
 
 **UPDATE_SCOPE**:  = "UPDATE_SCOPE"
 
-*Defined in [core/src/model/scopeReducer.ts:5](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/model/scopeReducer.ts#L5)*
+*Defined in [core/src/model/scopeReducer.ts:5](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/model/scopeReducer.ts#L5)*
 
 ___
 

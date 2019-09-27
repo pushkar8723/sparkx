@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["react/src/index"](../modules/_react_src_index_.md)
+[Sparkx](../README.md) > ["react/src/index"](../modules/_react_src_index_.md)
 
 # External module: "react/src/index"
 

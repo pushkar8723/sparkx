@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["core/src/stateManagement"](../modules/_core_src_statemanagement_.md)
+[Sparkx](../README.md) > ["core/src/stateManagement"](../modules/_core_src_statemanagement_.md)
 
 # External module: "core/src/stateManagement"
 
@@ -33,7 +33,7 @@
 
 ▸ **getScope**(state: *`any`*, scopeName: *`string`*): `any`
 
-*Defined in [core/src/stateManagement.ts:127](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/stateManagement.ts#L127)*
+*Defined in [core/src/stateManagement.ts:127](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/stateManagement.ts#L127)*
 
 Returns a scope with parent scopes attached in prototype of scope object.
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **mapCtrl**(controller: *`any`*): `object`
 
-*Defined in [core/src/stateManagement.ts:108](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/stateManagement.ts#L108)*
+*Defined in [core/src/stateManagement.ts:108](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/stateManagement.ts#L108)*
 
 Wraps all exported functions by controller to dispatch.
 
@@ -72,7 +72,7 @@ ___
 
 ▸ **mapPayloadToAction**(scopeName: *`string`*, payloadType: *[IPayloadType](../interfaces/_core_src_statemanagement_.ipayloadtype.md)*): `object` \| `object` \| `object`
 
-*Defined in [core/src/stateManagement.ts:84](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/stateManagement.ts#L84)*
+*Defined in [core/src/stateManagement.ts:84](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/stateManagement.ts#L84)*
 
 Maps payload type to action.
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **setGlobal**(payload: *`any`*): [IPayloadType](../interfaces/_core_src_statemanagement_.ipayloadtype.md)
 
-*Defined in [core/src/stateManagement.ts:59](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/stateManagement.ts#L59)*
+*Defined in [core/src/stateManagement.ts:59](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/stateManagement.ts#L59)*
 
 Function to be invoked by controllers if they want to update global store.
 
@@ -111,7 +111,7 @@ ___
 
 ▸ **setScope**(payload: *`any`*): [IPayloadType](../interfaces/_core_src_statemanagement_.ipayloadtype.md)
 
-*Defined in [core/src/stateManagement.ts:71](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/stateManagement.ts#L71)*
+*Defined in [core/src/stateManagement.ts:71](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/stateManagement.ts#L71)*
 
 Function to be invoked by controllers if they want to update local scope.
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **updateGlobalStore**(scopeName: *`string`*, payload: *`any`*): `object`
 
-*Defined in [core/src/stateManagement.ts:14](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/stateManagement.ts#L14)*
+*Defined in [core/src/stateManagement.ts:14](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/stateManagement.ts#L14)*
 
 Takes in payload to genrate global actions. When dispatched, this action will update the global state. It also takes in scope name which is not stored in state, however it may help in debugging which component updated the global scope in case of any conflict.
 
@@ -150,7 +150,7 @@ ___
 
 ▸ **updateScopeStore**(scopeName: *`string`*, payload: *`any`*): `object`
 
-*Defined in [core/src/stateManagement.ts:29](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/stateManagement.ts#L29)*
+*Defined in [core/src/stateManagement.ts:29](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/stateManagement.ts#L29)*
 
 Takes in scope name and payload to update the scope with given name.
 

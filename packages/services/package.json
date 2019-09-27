@@ -1,7 +1,7 @@
 {
   "name": "@sparkx/services",
   "version": "0.0.2",
-  "description": "> TODO: description",
+  "description": "Sparkx services",
   "author": "Pushkar Anand <pushkar8723@gmail.com>",
   "homepage": "https://github.com/pushkar8723/sparkx/tree/master/packages/services#readme",
   "license": "MIT",

@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["react/src/RoutingService"](../modules/_react_src_routingservice_.md)
+[Sparkx](../README.md) > ["react/src/RoutingService"](../modules/_react_src_routingservice_.md)
 
 # External module: "react/src/RoutingService"
 

@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["react/src/route"](../modules/_react_src_route_.md)
+[Sparkx](../README.md) > ["react/src/route"](../modules/_react_src_route_.md)
 
 # External module: "react/src/route"
 
@@ -19,7 +19,7 @@
 
 ▸ **bindMVC**(component: *`ComponentType`*, scopeName: *`string`*, controller?: *`any`*): `ComponentClass`<`any`, `any`> & `object` & `object`
 
-*Defined in [react/src/route.ts:20](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/route.ts#L20)*
+*Defined in [react/src/route.ts:20](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/route.ts#L20)*
 
 Binds Model in Redux to component and controller.
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **createRoute**<`IRouteData`>(routeState: *`IRouteState`<`IRouteData`>*): `object`
 
-*Defined in [react/src/route.ts:60](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/route.ts#L60)*
+*Defined in [react/src/route.ts:60](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/route.ts#L60)*
 
 Takes in a route state and returns transformed state that can be plugged into UI router.
 

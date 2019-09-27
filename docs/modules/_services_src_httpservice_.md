@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["services/src/HTTPService"](../modules/_services_src_httpservice_.md)
+[Sparkx](../README.md) > ["services/src/HTTPService"](../modules/_services_src_httpservice_.md)
 
 # External module: "services/src/HTTPService"
 

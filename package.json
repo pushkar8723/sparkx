@@ -11,7 +11,7 @@
     "check-all": "npx run-s lint test",
     "clean": "npx lerna run clean && npx lerna clean -y",
     "clear-docs": "shx rm -rf docs",
-    "docs": "npm run clear-docs && npx typedoc --out docs/ --theme markdown packages/**/src/",
+    "docs": "npm run clear-docs && npx typedoc",
     "build": "npx lerna run build",
     "prepare": "npx run-s bootstrap build check-all",
     "lint": "tslint -p tsconfig.json",
@@ -32,10 +32,6 @@
     "url": "https://github.com/pushkar8723/sparkx/issues"
   },
   "homepage": "https://github.com/pushkar8723/sparkx#readme",
-  "peerDependencies": {
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3"
-  },
   "files": [
     "lib/**/*",
     "lib-esm/**/*",
@@ -87,9 +83,6 @@
     ],
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
-    },
-    "moduleNameMapper": {
-      "^src(.*)$": "<rootDir>/src$1"
     },
     "moduleFileExtensions": [
       "js",

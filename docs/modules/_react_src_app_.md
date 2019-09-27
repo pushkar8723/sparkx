@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["react/src/App"](../modules/_react_src_app_.md)
+[Sparkx](../README.md) > ["react/src/App"](../modules/_react_src_app_.md)
 
 # External module: "react/src/App"
 
@@ -18,7 +18,7 @@
 
 ▸ **initApp**<`G`>(config?: *`function`*, mode?: *`string`*): `Element`
 
-*Defined in [react/src/App.tsx:13](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/App.tsx#L13)*
+*Defined in [react/src/App.tsx:13](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/App.tsx#L13)*
 
 Creates a new app with store and router configured.
 

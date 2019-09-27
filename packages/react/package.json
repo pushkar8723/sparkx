@@ -1,7 +1,7 @@
 {
   "name": "@sparkx/react",
   "version": "0.0.2",
-  "description": "> TODO: description",
+  "description": "Sparkx facade for React",
   "author": "Pushkar Anand <pushkar8723@gmail.com>",
   "homepage": "https://github.com/pushkar8723/sparkx/tree/master/packages/react#readme",
   "license": "MIT",
@@ -30,6 +30,10 @@
   },
   "bugs": {
     "url": "https://github.com/pushkar8723/sparkx/issues"
+  },
+  "peerDependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
   },
   "dependencies": {
     "@sparkx/core": "^0.0.2",

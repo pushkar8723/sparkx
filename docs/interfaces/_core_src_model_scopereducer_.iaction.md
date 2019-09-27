@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["core/src/model/scopeReducer"](../modules/_core_src_model_scopereducer_.md) > [IAction](../interfaces/_core_src_model_scopereducer_.iaction.md)
+[Sparkx](../README.md) > ["core/src/model/scopeReducer"](../modules/_core_src_model_scopereducer_.md) > [IAction](../interfaces/_core_src_model_scopereducer_.iaction.md)
 
 # Interface: IAction
 
@@ -24,7 +24,7 @@
 
 **● payload**: *`any`*
 
-*Defined in [core/src/model/scopeReducer.ts:22](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/model/scopeReducer.ts#L22)*
+*Defined in [core/src/model/scopeReducer.ts:22](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/model/scopeReducer.ts#L22)*
 
 Payload for global state.
 
@@ -35,7 +35,7 @@ ___
 
 **● scopeName**: *`string`*
 
-*Defined in [core/src/model/scopeReducer.ts:18](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/model/scopeReducer.ts#L18)*
+*Defined in [core/src/model/scopeReducer.ts:18](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/model/scopeReducer.ts#L18)*
 
 Name of the scope to be updated.
 
@@ -46,7 +46,7 @@ ___
 
 **● type**: *[ScopeActions](../enums/_core_src_model_scopereducer_.scopeactions.md)*
 
-*Defined in [core/src/model/scopeReducer.ts:14](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/model/scopeReducer.ts#L14)*
+*Defined in [core/src/model/scopeReducer.ts:14](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/model/scopeReducer.ts#L14)*
 
 Action Identifier.
 

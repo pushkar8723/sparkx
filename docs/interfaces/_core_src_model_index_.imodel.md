@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["core/src/model/index"](../modules/_core_src_model_index_.md) > [IModel](../interfaces/_core_src_model_index_.imodel.md)
+[Sparkx](../README.md) > ["core/src/model/index"](../modules/_core_src_model_index_.md) > [IModel](../interfaces/_core_src_model_index_.imodel.md)
 
 # Interface: IModel
 
@@ -25,7 +25,7 @@
 
 **● global**: *`G`*
 
-*Defined in [core/src/model/index.ts:9](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/model/index.ts#L9)*
+*Defined in [core/src/model/index.ts:9](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/model/index.ts#L9)*
 
 Global scope. To be passed to all components.
 
@@ -36,7 +36,7 @@ ___
 
 **● scopes**: *`object`*
 
-*Defined in [core/src/model/index.ts:13](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/model/index.ts#L13)*
+*Defined in [core/src/model/index.ts:13](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/model/index.ts#L13)*
 
 Local scope of each component. Identified by the scope name.
 

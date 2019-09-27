@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["react/src/RoutingService"](../modules/_react_src_routingservice_.md) > [RoutingService](../classes/_react_src_routingservice_.routingservice.md)
+[Sparkx](../README.md) > ["react/src/RoutingService"](../modules/_react_src_routingservice_.md) > [RoutingService](../classes/_react_src_routingservice_.routingservice.md)
 
 # Class: RoutingService
 
@@ -43,7 +43,7 @@ Routing Service. For easy managemet of routes.
 
 *Overrides ServiceBase.__constructor*
 
-*Defined in [react/src/RoutingService.ts:19](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/RoutingService.ts#L19)*
+*Defined in [react/src/RoutingService.ts:19](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/RoutingService.ts#L19)*
 
 **Returns:** [RoutingService](_react_src_routingservice_.routingservice.md)
 
@@ -57,7 +57,7 @@ ___
 
 **● router**: *`UIRouterReact`*
 
-*Defined in [react/src/RoutingService.ts:19](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/RoutingService.ts#L19)*
+*Defined in [react/src/RoutingService.ts:19](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/RoutingService.ts#L19)*
 
 Router instance.
 
@@ -71,7 +71,7 @@ ___
 
 ▸ **getRouter**(): `UIRouterReact`
 
-*Defined in [react/src/RoutingService.ts:70](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/RoutingService.ts#L70)*
+*Defined in [react/src/RoutingService.ts:70](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/RoutingService.ts#L70)*
 
 Returns the configured router.
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **goTo**(stateName: *`string`*, stateParams?: *`any`*): `void`
 
-*Defined in [react/src/RoutingService.ts:63](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/RoutingService.ts#L63)*
+*Defined in [react/src/RoutingService.ts:63](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/RoutingService.ts#L63)*
 
 Redirects to the given state.
 
@@ -104,7 +104,7 @@ ___
 
 ▸ **registerBeforeHook**(callback: *`TransitionHookFn`*): `void`
 
-*Defined in [react/src/RoutingService.ts:77](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/RoutingService.ts#L77)*
+*Defined in [react/src/RoutingService.ts:77](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/RoutingService.ts#L77)*
 
 Registers hook function which is called before state transition is started.
 
@@ -123,7 +123,7 @@ ___
 
 ▸ **registerPlugin**(plugin: *`PluginFactory`<`UIRouterPlugin`>*): `void`
 
-*Defined in [react/src/RoutingService.ts:49](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/RoutingService.ts#L49)*
+*Defined in [react/src/RoutingService.ts:49](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/RoutingService.ts#L49)*
 
 Registers a plugin
 
@@ -142,7 +142,7 @@ ___
 
 ▸ **registerRoutes**(routes: *`IRouteState`<`any`>[]*): `void`
 
-*Defined in [react/src/RoutingService.ts:35](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/RoutingService.ts#L35)*
+*Defined in [react/src/RoutingService.ts:35](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/RoutingService.ts#L35)*
 
 Registers routes for appliaction
 
@@ -161,7 +161,7 @@ ___
 
 ▸ **registerSuccessHook**(callback: *`TransitionHookFn`*): `void`
 
-*Defined in [react/src/RoutingService.ts:84](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/RoutingService.ts#L84)*
+*Defined in [react/src/RoutingService.ts:84](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/RoutingService.ts#L84)*
 
 Registers hook function which is called when state transition is success.
 
@@ -180,7 +180,7 @@ ___
 
 ▸ **set404State**(state: *`string`*): `void`
 
-*Defined in [react/src/RoutingService.ts:56](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/RoutingService.ts#L56)*
+*Defined in [react/src/RoutingService.ts:56](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/RoutingService.ts#L56)*
 
 Sets fallback state for the application.
 
@@ -199,7 +199,7 @@ ___
 
 ▸ **setInitialState**(state: *`string`*): `void`
 
-*Defined in [react/src/RoutingService.ts:42](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/RoutingService.ts#L42)*
+*Defined in [react/src/RoutingService.ts:42](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/RoutingService.ts#L42)*
 
 Sets starting route of application
 

@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["core/src/ControllerBase"](../modules/_core_src_controllerbase_.md) > [ControllerBase](../classes/_core_src_controllerbase_.controllerbase.md)
+[Sparkx](../README.md) > ["core/src/ControllerBase"](../modules/_core_src_controllerbase_.md) > [ControllerBase](../classes/_core_src_controllerbase_.controllerbase.md)
 
 # Class: ControllerBase
 
@@ -34,7 +34,7 @@ Base for all controller class
 
 ⊕ **new ControllerBase**(scope: *`S`*, setScope: *`function`*, global: *`G`*, setGlobal: *`function`*): [ControllerBase](_core_src_controllerbase_.controllerbase.md)
 
-*Defined in [core/src/ControllerBase.ts:23](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/ControllerBase.ts#L23)*
+*Defined in [core/src/ControllerBase.ts:23](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/ControllerBase.ts#L23)*
 
 **Parameters:**
 
@@ -57,7 +57,7 @@ ___
 
 **● _global**: *`G`*
 
-*Defined in [core/src/ControllerBase.ts:8](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/ControllerBase.ts#L8)*
+*Defined in [core/src/ControllerBase.ts:8](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/ControllerBase.ts#L8)*
 
 Global state.
 
@@ -68,7 +68,7 @@ ___
 
 **● _scope**: *`S`*
 
-*Defined in [core/src/ControllerBase.ts:13](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/ControllerBase.ts#L13)*
+*Defined in [core/src/ControllerBase.ts:13](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/ControllerBase.ts#L13)*
 
 Local state
 
@@ -79,7 +79,7 @@ ___
 
 **● _setGlobal**: *`function`*
 
-*Defined in [core/src/ControllerBase.ts:23](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/ControllerBase.ts#L23)*
+*Defined in [core/src/ControllerBase.ts:23](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/ControllerBase.ts#L23)*
 
 Function to set global scope.
 
@@ -104,7 +104,7 @@ ___
 
 **● _setScope**: *`function`*
 
-*Defined in [core/src/ControllerBase.ts:18](https://github.com/pushkar8723/sparkx/blob/980f391/packages/core/src/ControllerBase.ts#L18)*
+*Defined in [core/src/ControllerBase.ts:18](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/core/src/ControllerBase.ts#L18)*
 
 Function to set local scope.
 

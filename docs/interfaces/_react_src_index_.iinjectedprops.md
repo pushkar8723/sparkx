@@ -1,4 +1,4 @@
-[@sparkx/core](../README.md) > ["react/src/index"](../modules/_react_src_index_.md) > [IInjectedProps](../interfaces/_react_src_index_.iinjectedprops.md)
+[Sparkx](../README.md) > ["react/src/index"](../modules/_react_src_index_.md) > [IInjectedProps](../interfaces/_react_src_index_.iinjectedprops.md)
 
 # Interface: IInjectedProps
 
@@ -43,7 +43,7 @@ ___
 
 **● global**: *`G`*
 
-*Defined in [react/src/index.ts:13](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/index.ts#L13)*
+*Defined in [react/src/index.ts:13](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/index.ts#L13)*
 
 Global scope.
 
@@ -65,7 +65,7 @@ ___
 
 **● scope**: *`S`*
 
-*Defined in [react/src/index.ts:17](https://github.com/pushkar8723/sparkx/blob/980f391/packages/react/src/index.ts#L17)*
+*Defined in [react/src/index.ts:17](https://github.com/pushkar8723/sparkx/blob/54aa3d4/packages/react/src/index.ts#L17)*
 
 Local scope.
 
