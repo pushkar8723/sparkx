@@ -34,6 +34,7 @@
   "dependencies": {
     "@sparkx/core": "^0.0.1",
     "@uirouter/react": "^0.8.9",
+    "redux": "^4.0.4",
     "react-redux": "^7.0.3"
   }
 }
