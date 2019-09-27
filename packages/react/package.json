@@ -1,6 +1,6 @@
 {
   "name": "@sparkx/react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "Pushkar Anand <pushkar8723@gmail.com>",
   "homepage": "https://github.com/pushkar8723/sparkx/tree/master/packages/react#readme",
@@ -32,9 +32,9 @@
     "url": "https://github.com/pushkar8723/sparkx/issues"
   },
   "dependencies": {
-    "@sparkx/core": "^0.0.1",
+    "@sparkx/core": "^0.0.2",
     "@uirouter/react": "^0.8.9",
-    "redux": "^4.0.4",
-    "react-redux": "^7.0.3"
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.4"
   }
 }
