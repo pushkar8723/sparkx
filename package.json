@@ -16,7 +16,7 @@
     "prepare": "npx run-s bootstrap build check-all",
     "lint": "tslint -p tsconfig.json",
     "test": "jest --coverage",
-    "bootstrap": "npm run build && npx lerna bootstrap"
+    "bootstrap": "npx lerna bootstrap"
   },
   "repository": {
     "type": "git",
