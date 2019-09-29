@@ -65,6 +65,7 @@ export function createRoute<IRouteData>(routeState: IRouteState<IRouteData>) {
         data: routeState.data,
         lazyLoad: routeState.lazyLoad,
         name: routeState.name,
+        params: routeState.params,
         redirectTo: routeState.redirectTo,
         url: routeState.url,
     };

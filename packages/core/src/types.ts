@@ -29,4 +29,19 @@ export interface IRouteState<D> {
      * Lazy loaded function
      */
     lazyLoad?: () => Promise<any>;
+    /**
+     * State params definition
+     */
+    params: {
+        [name: string]: {
+            /**
+             * Data type of param
+             */
+            type: string,
+            /**
+             * Flag to disable param encoding.
+             */
+            raw: boolean,
+        };
+    };
 }

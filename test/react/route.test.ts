@@ -70,6 +70,7 @@ describe('Test Routes', () => {
             data: undefined,
             lazyLoad: undefined,
             name: 'test',
+            params: undefined,
             redirectTo: undefined,
             url: '/',
         });
@@ -96,6 +97,7 @@ describe('Test Routes', () => {
             data: undefined,
             lazyLoad: undefined,
             name: 'test',
+            params: undefined,
             redirectTo: undefined,
             url: '/',
         });
@@ -113,6 +115,7 @@ describe('Test Routes', () => {
             data: undefined,
             lazyLoad: undefined,
             name: 'test',
+            params: undefined,
             redirectTo: undefined,
             url: '/',
         });
