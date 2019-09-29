@@ -1,6 +1,6 @@
 {
   "name": "@sparkx/core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Sparkx state management module",
   "author": "Pushkar Anand <pushkar8723@gmail.com>",
   "homepage": "https://github.com/pushkar8723/sparkx/tree/master/packages/core#readme",

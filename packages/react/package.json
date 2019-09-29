@@ -1,6 +1,6 @@
 {
   "name": "@sparkx/react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Sparkx facade for React",
   "author": "Pushkar Anand <pushkar8723@gmail.com>",
   "homepage": "https://github.com/pushkar8723/sparkx/tree/master/packages/react#readme",
@@ -36,7 +36,7 @@
     "react-dom": "^16.8.3"
   },
   "dependencies": {
-    "@sparkx/core": "^0.0.3",
+    "@sparkx/core": "^0.0.4",
     "@uirouter/react": "^0.8.9",
     "react-redux": "^7.0.3",
     "redux": "^4.0.4"
