@@ -22,8 +22,9 @@ This tradeoff between predictability and time for development is what sparkx tri
 - [x] Typed
 - [x] Sigleton services
 - [x] Support for React
+- [ ] Support for Preact
 - [ ] Support for Vue
-- [ ] Support for Polymer
+- [ ] Support for lit-element
 
 ### Gettting Started
 

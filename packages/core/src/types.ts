@@ -32,7 +32,7 @@ export interface IRouteState<D> {
     /**
      * State params definition
      */
-    params: {
+    params?: {
         [name: string]: {
             /**
              * Data type of param
