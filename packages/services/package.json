@@ -1,6 +1,6 @@
 {
   "name": "@sparkx/services",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Sparkx services",
   "author": "Pushkar Anand <pushkar8723@gmail.com>",
   "homepage": "https://github.com/pushkar8723/sparkx/tree/master/packages/services#readme",
@@ -32,7 +32,7 @@
     "url": "https://github.com/pushkar8723/sparkx/issues"
   },
   "dependencies": {
-    "@sparkx/core": "^0.0.4",
+    "@sparkx/core": "^0.0.5",
     "axios": "^0.19.0"
   }
 }
