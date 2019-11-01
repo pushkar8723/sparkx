@@ -1,11 +1,11 @@
 Sparkx :sparkles:
 =================
-[![npm version](https://badge.fury.io/js/sparkx.svg)](https://badge.fury.io/js/sparkx)
 [![Build Status](https://travis-ci.org/pushkar8723/sparkx.svg?branch=master)](https://travis-ci.org/pushkar8723/sparkx)
 [![Coverage Status](https://coveralls.io/repos/github/pushkar8723/sparkx/badge.svg?branch=master)](https://coveralls.io/github/pushkar8723/sparkx?branch=master)
-![Minifized Size](https://badgen.net/bundlephobia/min/sparkx)
-![Gzipped Size](https://badgen.net/bundlephobia/minzip/sparkx)
 [![license](https://badgen.now.sh/badge/license/MIT)](./LICENSE)
+[![npm version](https://badge.fury.io/js/%40sparkx%2Freact.svg)](https://badge.fury.io/js/%40sparkx%2Freact)
+![Minifized Size](https://badgen.net/bundlephobia/min/@sparkx/react)
+![Gzipped Size](https://badgen.net/bundlephobia/minzip/@sparkx/react)
 
 MVC framework with flux implementation for state management.
 
@@ -39,7 +39,7 @@ To initialize an app, `initApp` function needs to be called. It takes a callback
 ```TypeScript
 import routes from 'config/routes';
 import * as ReactDOM from 'react-dom';
-import { initApp, pushStateLocationPlugin, RoutingService } from 'sparkx/react';
+import { initApp, pushStateLocationPlugin, RoutingService } from '@sparkx/react';
 
 ReactDOM.render(
     initApp<IGlobal>(
@@ -65,7 +65,7 @@ ReactDOM.render(
 As evident by the code snippet above, we also need to configure application routes while initializing the application. For this, we use `RoutingService` (Detailed docs available [here](./docs/classes/_react_routingservice_.routingservice.md)). To create each route we need to call `createRoute` function as shown below. The `createRoute` method and `RoutingService` internally uses [UI-Router-React](https://github.com/ui-router/react) for creating and managing routes of the application.
 
 ```TypeScript
-import { createRoute } from 'sparkx/react';
+import { createRoute } from '@sparkx/react';
 import { Error404 } from 'views/Error';
 import { Welcome, WelcomeCtrl } from 'views/Welcome';
 
@@ -113,8 +113,8 @@ Creating a controller for a view is optional. To create a controller, the class 
 All public methods in controllers are exposed as props in react component (view of the application). Like in example below, `login` method is exposed in react component as prop.
 
 ```TypeScript
-import { ControllerBase } from 'sparkx/core';
-import { RoutingService } from 'sparkx/react';
+import { ControllerBase } from '@sparkx/core';
+import { RoutingService } from '@sparkx/react';
 
 /**
  * Welcome Controller
@@ -144,9 +144,8 @@ export default WelcomeCtrl;
 A service can be created for any application logic which spreads across views. A service can be created simply by extending `ServiceBase` class (Detailed docs available [here](./docs/classes/_core_servicebase_.servicebase.md)). `HTTPService` is available in sparkx which helps in managing api calls (Detailed docs available [here](./docs/classes/_services_httpservice_.httpservice.md)). `HTTPService` internally uses [axios](https://github.com/axios/axios) to make requests. Extending `ServiceBase` class ensures that the service is a singleton.
 
 ```TypeScript
-import { AxiosPromise } from 'axios';
-import { ServiceBase } from 'sparkx/core';
-import { HTTPService } from 'sparkx/services';
+import { ServiceBase } from '@sparkx/core';
+import { HTTPService, AxiosPromise } from '@sparkx/services';
 
 /**
  * Service for Google Books apis.
