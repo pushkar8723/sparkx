@@ -7,7 +7,7 @@ Sparkx :sparkles:
 ![Minifized Size](https://badgen.net/bundlephobia/min/@sparkx/react)
 ![Gzipped Size](https://badgen.net/bundlephobia/minzip/@sparkx/react)
 
-MVC framework with flux implementation for state management.
+Abstraction over Redux and UI Router for faster application development.
 
 Today a frontend developer has to make a very difficult choice before starting any project, i.e., to have an MVC framework or go with flux pattern. MVC brings a very well defined separation of concerns to the table whereas flux brings predictability which might help when the application grows to be a monolith, but adds the amount of boilerplate code that needs to be written for implementing a feature. Making application development slow. This only deteriorates with time.
 
@@ -26,13 +26,13 @@ This tradeoff between predictability and time for development is what sparkx tri
 - [ ] Support for Vue
 - [ ] Support for lit-element
 
-### Gettting Started
+### Getting Started
 
 All you need to keep in mind while writing an application using sparkx is that there are two scopes.
 - Global: This state is available to every view and controller and can be used to save information required throughout the application like user context and metadata.
 - Scope: This part of the state is specific to the view and controller. It is automatically cleared when the user moves to another state.
 
-##### Initializing App
+#### Initializing App
 
 To initialize an app, `initApp` function needs to be called. It takes a callback function as an argument. It exposes a setGlobal function as an argument to the given callback function. `setGlobal` can be used to initialize (if required) global scope with some initial value.
 
@@ -60,7 +60,7 @@ ReactDOM.render(
 );
 ```
 
-##### Routes Configuration
+#### Routes Configuration
 
 As evident by the code snippet above, we also need to configure application routes while initializing the application. For this, we use `RoutingService` (Detailed docs available [here](./docs/classes/_react_routingservice_.routingservice.md)). To create each route we need to call `createRoute` function as shown below. The `createRoute` method and `RoutingService` internally uses [UI-Router-React](https://github.com/ui-router/react) for creating and managing routes of the application.
 
@@ -103,7 +103,7 @@ const booksFutureState = createRoute({
 export default [welcomeState, booksFutureState, errorState];
 ```
 
-##### Creating a Controller
+#### Creating a Controller
 
 Creating a controller for a view is optional. To create a controller, the class must extend `ControllerBase` class (Detailed docs available [here](./docs/classes/_core_controllerbase_.controllerbase.md)). Each controller will be injected with 4 private members as described below:
 - `this._scope`: Local scope of the view and controller.
@@ -139,7 +139,7 @@ class WelcomeCtrl extends ControllerBase<any, any> {
 export default WelcomeCtrl;
 ```
 
-##### Creating a Service
+#### Creating a Service
 
 A service can be created for any application logic which spreads across views. A service can be created simply by extending `ServiceBase` class (Detailed docs available [here](./docs/classes/_core_servicebase_.servicebase.md)). `HTTPService` is available in sparkx which helps in managing api calls (Detailed docs available [here](./docs/classes/_services_httpservice_.httpservice.md)). `HTTPService` internally uses [axios](https://github.com/axios/axios) to make requests. Extending `ServiceBase` class ensures that the service is a singleton.
 
